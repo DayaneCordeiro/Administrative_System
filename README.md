@@ -47,21 +47,23 @@
 </div>
 
 <div id="pre-requirements">
-    <h1>Pré requerimentos</h1>
-    <div align="justify">
-        Para a instalação do pacote AdminLTE, basta executar os seguintes comandos na raiz do projeto:<br>
-        <code>
-        composer require jeroennoten/laravel-adminlte<br>
-        php artisan adminlte:install
-        </code>
+<h1>Pré requerimentos</h1>
+<div align="justify">
+Para a instalação do pacote AdminLTE, basta executar os seguintes comandos na raiz do projeto:
 
-        Para a instalação do pacote laravel-ui, é necessário executar os comandos:
-        <code>
-        composer require laravel/ui<br>
-        php artisan ui bootstrap --auth<br>
-        php artisan adminlte:install --only=auth_views
-        </code>
-    </div>
+```    
+composer require jeroennoten/laravel-adminlte
+php artisan adminlte:install
+```
+
+Para a instalação do pacote laravel-ui, é necessário executar os comandos:
+
+```
+composer require laravel/ui
+php artisan ui vue --auth
+```
+
+</div>
 </div>
 
 <div id="how-to-use">
