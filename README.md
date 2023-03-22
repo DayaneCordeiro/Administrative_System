@@ -58,7 +58,8 @@
         Para a instalação do pacote laravel-ui, é necessário executar os comandos:
         <code>
         composer require laravel/ui<br>
-        php artisan ui vue --auth
+        php artisan ui bootstrap --auth<br>
+        php artisan adminlte:install --only=auth_views
         </code>
     </div>
 </div>
