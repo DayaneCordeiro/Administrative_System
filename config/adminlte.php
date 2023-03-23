@@ -293,15 +293,17 @@ return [
         // Sidebar items:
         [
             'text'    => 'Serviços',
-            'icon'    => 'fas fa-angle-double-right',
+            'icon'    => 'fas fa-fw fa-broom',
             'submenu' => [
                 [
-                    'text' => 'Listar serviços',
-                    'url'  => '#',
+                    'text' => 'Lista de serviços',
+                    'route'  => 'services.index',
+                    'icon'    => 'fas fa-fw fa-list',
                 ],
                 [
                     'text' => 'Cadastrar serviço',
                     'url'  => '#',
+                    'icon'    => 'fas fa-fw fa-file',
                 ],
             ],
         ],
