@@ -60,16 +60,25 @@ Para a instalação do pacote laravel-ui, é necessário executar os comandos:
 
 ```
 composer require laravel/ui
-php artisan ui vue --auth
+php artisan ui bootstrap --auth
+php artisan adminlte:install --only=auth_views
 ```
+
+Para a instalação do pacote de tradução da aplicação, é necessário executar os comandos:
+
+```
+composer require lucascudo/laravel-pt-br-localization --dev
+php artisan vendor:publish --tag=laravel-pt-br-localization
+```
+
+A pasta de tradução é criada dentro do diretório lang. É necessário renomear essa pasta que foi criada com o nome pt-BR para pt-br. E também o arquivo pt-BR.json para pt-br.json. Dentro da pasta config, é necessário mudar o valor do campo locale do arquivo app.php para pt-br.
 
 </div>
 </div>
 
 <div id="how-to-use">
 <h1>Como usar</h1>
-<li>O link para a documentação da API encontra-se a seguir: https://htmlpreview.github.io/?https://github.com/DayaneCordeiro/Digital_Payments/blob/main/documents/apidoc/index.html</li>
-<li>Através desta documentação é possível utilizar todas as rotas desta API de forma correta.</li>
+Para utilizar o projeto de forma local, é necessário ter o laravel e o node executando. Para isso, basta executar em um terminal o comando <code>php artisan serve</code> e em outro terminal <code>npm run dev</code>.
 </div>
 
 <div id="software-configs">
