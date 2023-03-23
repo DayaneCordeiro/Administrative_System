@@ -7,5 +7,28 @@
 @stop
 
 @section('content')
-    <p>Mostrar a lista aqui.</p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            @forelse ($services as $service)
+                <tr>
+                    <th>{{ $service->id }}</th>
+                    <td>{{ $service->name }}</td>
+                    <td>aaa</td>
+                </tr>
+            @empty
+                <tr>
+                    <th></th>
+                    <th>Nenhum registro encontrado.</th>
+                    <th></th>
+                </tr>
+            @endforelse
+        </tbody>
+    </table>
 @stop
