@@ -9,8 +9,8 @@ class ServicesController extends Controller
 {
     public function index()
     {
-        $services = Service::get();
+        $services = Service::paginate(10);
 
-        return view('services.index')->with('services', $services);;
+        return view('services.index')->with('services', $services);
     }
 }
